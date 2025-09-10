@@ -1,22 +1,22 @@
 package model;
 
 public class Clientes { // Classe de modelo para clientes
-    private int id;
+    private int idc;
     private String nome;
     private int cpf;
 
-    public Clientes(int id, String nome, int cpf) { // Construtor
-        this.id = id;
+    public Clientes(int idc, String nome, int cpf) { // Construtor
+        this.idc = idc;
         this.nome = nome;
         this.cpf = cpf;
     }
 
     // Getters e Setters
     public int getId() {
-        return id;
+        return idc;
     }
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int idc) {
+        this.idc = idc;
     }
     public String getNome() {
         return nome;
@@ -34,7 +34,7 @@ public class Clientes { // Classe de modelo para clientes
     //metodos especificos para a classe clientes
     @Override // Método toString para exibir informações do cliente
     public String toString() {
-        return "Clientes [id=" + id + ", nome=" + nome + ", cpf=" + cpf + "]";
+        return "Clientes [id=" + idc + ", nome=" + nome + ", cpf=" + cpf + "]";
     }
 
     

@@ -1,13 +1,16 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Estoque {
     private int id;
-    private Produtos produto;
+    private List<Produtos> produtos;
     private int quantidade;
 
     public Estoque(int id, Produtos produto, int quantidade) { // Construtor
         this.id = id;
-        this.produto = produto;
+        this.produtos = new ArrayList<>();
         this.quantidade = quantidade;
     }
 
@@ -18,11 +21,11 @@ public class Estoque {
     public void setId(int id) {
         this.id = id;
     }
-    public Produtos getProduto() {
-        return produto;
+    public List<Produtos> getProdutos() {
+        return produtos;
     }
-    public void setProduto(Produtos produto) {
-        this.produto = produto;
+    public void setProdutos(List<Produtos> produtos) {
+        this.produtos = produtos;
     }
     public int getQuantidade() {
         return quantidade;
@@ -35,7 +38,7 @@ public class Estoque {
 
     @Override // Método toString para exibir informações do estoque
     public String toString() {
-        return "Estoque [id=" + id + ", produto=" + produto + ", quantidade=" + quantidade + "]";
+        return "Estoque [id=" + id + ", produto=" + produtos + ", quantidade=" + quantidade + "]";
     }
     
 }

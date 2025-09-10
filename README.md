@@ -12,7 +12,7 @@ Projeto desenvolvido para praticar **Programação Orientada a Objetos (POO)**, 
 - **Leonardo José Cabral** → Model: `Funcionários`, `Doces`
 - **Murilo Antonio Fernandes Correa** → App: `Main` | Model: `Estoque`, `Produtos` | Validações: `Validações`
 - **Rebeca Luchini Flauzino A.** → App: `Main`
-- **Cauã Lenart** → App: `Main` (correção de erros) | Model: (correção de erros)
+- **Cauã Lenart** → App: `Main` (correção de erros) | Model: (correção de erros) | Validações: `Validações`
 
 ### OUTROS
 

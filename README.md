@@ -10,22 +10,13 @@ Projeto desenvolvido para praticar **Programação Orientada a Objetos (POO)**, 
 - **Pedro Henrique Vicente Amaro** → Model: `Clientes`, `Doces`, `Funcionários`
 - **Marina G. Neves** → Model: `Doces`, `Clientes`, `Funcionários`
 - **Leonardo José Cabral** → Model: `Funcionários`, `Doces`
-- **Murilo Antonio Fernandes Correa** → App: `Main` | Model: `Clientes`, `Doces`, `Estoque`, `Funcionários`, `Produtos` | Validações: `Validações`
+- **Murilo Antonio Fernandes Correa** → App: `Main` | Model: `Estoque`, `Produtos` | Validações: `Validações`
 - **Rebeca Luchini Flauzino A.** → App: `Main`
 - **Cauã Lenart** → App: `Main` (correção de erros) | Model: (correção de erros)
 
----
-
-### 🎮 Jogo
-- **Rebeca Flauzino Luchini A.** → Python: `Verificação`
-
----
-
-
-
-
 ### OUTROS
 
+**Leonardo José Cabral**:
 ### 🍬 Sugestões de Doces para Testes
 - Kit Kat Caramelo Salgado — **R$ 3,49**  
 - Laka Oreo — **R$ 7,99**  

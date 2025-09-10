@@ -16,7 +16,7 @@ Projeto desenvolvido para praticar **Programação Orientada a Objetos (POO)**, 
 
 ### OUTROS
 
-**Leonardo José Cabral**:
+-**Leonardo José Cabral**:
 ### 🍬 Sugestões de Doces para Testes
 - Kit Kat Caramelo Salgado — **R$ 3,49**  
 - Laka Oreo — **R$ 7,99**  

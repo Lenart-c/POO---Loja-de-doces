@@ -16,6 +16,16 @@ Projeto desenvolvido para praticar **Programação Orientada a Objetos (POO)**, 
 
 ---
 
+### 🎮 Jogo
+- **Rebeca Flauzino Luchini A.** → Python: `Verificação`
+
+---
+
+
+
+
+##OUTROS
+
 ### 🍬 Sugestões de Doces para Testes
 - Kit Kat Caramelo Salgado — **R$ 3,49**  
 - Laka Oreo — **R$ 7,99**  
@@ -24,11 +34,3 @@ Projeto desenvolvido para praticar **Programação Orientada a Objetos (POO)**, 
 - Snickers Morango — **R$ 4,49**  
 - M&M Chocolate — **R$ 12,99**  
 - 5Star — **R$ 3,99**
-
----
-
-### 🎮 Jogo
-- **Rebeca Flauzino Luchini A.** → Python: `Verificação`
-
----
-

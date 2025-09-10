@@ -1,6 +1,5 @@
 package validacacoes;
 
-import model.Clientes;
 import model.Produtos;
 import java.util.List;
 import java.util.Scanner;
@@ -9,99 +8,90 @@ public class Validacao {
 
     public static boolean validarNomes(String nome) { // Valida o nome
         // Nome não pode ser vazio e deve conter apenas letras e espaços 
-        return nome != null && !nome.trim().isEmpty() && nome.matches("[a-zA-Z ]+");
+        if (nome != null && !nome.trim().isEmpty() && nome.matches("[a-zA-Z ]+")) {
+            return true; // Nome é válido
+        } 
+        System.out.println("[ERRO] Nome inválido. Use apenas letras e espaços.");
+        return false; // Nome é inválido
     }
 
-    public static boolean validarId(int id, List<Produtos> produtos){
+    public static boolean validarId(int id, List<Produtos> produtos) {
         if (id <= 0) {
-            System.out.println("Id não pode ser negativo. Tente novamente.");
+            System.out.println("[ERRO] O ID deve ser maior que zero.");
             return false; // Id não pode ser negativo ou zero
         }
-        for(Produtos p : produtos) {
-            if(p.getId() == id) {
-                System.out.println("Id já existe. Tente novamente.");
+        for (Produtos p : produtos) {
+            if (p.getId() == id) {
+                System.out.println("[ERRO] Este ID já está cadastrado. Escolha outro.");
                 return false; // Id já existe
             }
-        }return true; // Id é válido
+        }
+        return true; // Id é válido
     }
 
-    public static boolean validarPreco(double preco){
+    public static boolean validarPreco(double preco) {
         if (preco <= 0) {
-            System.out.println("Preço tem que ser maior que zero. Tente novamente.");
-            return false; // Preço não pode ser negativo
-        }return true; // Preço é válido
+            System.out.println("[ERRO] O preço deve ser maior que zero.");
+            return false; // Preço não pode ser negativo ou zero
+        }
+        return true; // Preço é válido
     }
 
-    public static boolean validarQuantidade(int quantidade){
+    public static boolean validarQuantidade(int quantidade) {
         if (quantidade < 0) {
-            System.out.println("Quantidade não pode ser negativa. Tente novamente.");
+            System.out.println("[ERRO] A quantidade não pode ser negativa.");
             return false; // Quantidade não pode ser negativa
-        }return true; // Quantidade é válida
+        }
+        return true; // Quantidade é válida
     }
 
-    public static boolean validarGluten(String gluten){
+    public static boolean validarGluten(String gluten) {
         if (!gluten.equalsIgnoreCase("S") && !gluten.equalsIgnoreCase("N")) {
-            System.out.println("Entrada inválida. Digite 'S' para sim ou 'N' para não.");
+            System.out.println("[ERRO] Entrada inválida. Digite 'S' para sim ou 'N' para não.");
             return false; // Entrada inválida
-        }return true; // Entrada é válida
+        }
+        return true; // Entrada é válida
     }
 
-    public static boolean listaVazia(List<Produtos> produtos){
+    public static boolean listaVazia(List<Produtos> produtos) {
         if (produtos.isEmpty()) {
-            System.out.println("A lista de produtos está vazia.");
+            System.out.println("[AVISO] Nenhum produto cadastrado até o momento.");
             return true; // A lista está vazia
-        }return false; // A lista não está vazia
+        }
+        return false; // A lista não está vazia
     }
 
-    public static boolean listaVaziaC(List<Clientes> clientes){
-        if (clientes.isEmpty()) {
-            System.out.println("A lista de produtos está vazia.");
-            return true; // A lista está vazia
-        }return false; // A lista não está vazia
-    }
-
-    public static int lerInteiro(Scanner scanner, String mensagem){
+    public static int lerInteiro(Scanner scanner, String mensagem) {
         int valor;
-        while(true){
+        while (true) {
             System.out.print(mensagem);
-            if(scanner.hasNextInt()){
+            if (scanner.hasNextInt()) {
                 valor = scanner.nextInt();
                 scanner.nextLine();
                 break;
-            }else{
-                System.out.println("Digite apenas números inteiros!");
+            } else {
+                System.out.println("[ERRO] Digite apenas números inteiros.");
                 scanner.next();
             }
         }
         return valor;
     }
 
-    public static double lerDouble(Scanner scanner, String mensagem){
+    public static double lerDouble(Scanner scanner, String mensagem) {
         double valor;
-        while(true){
+        while (true) {
             System.out.print(mensagem);
-            if(scanner.hasNextDouble()){
+            if (scanner.hasNextDouble()) {
                 valor = scanner.nextDouble();
                 scanner.nextLine();
                 break;
-            }else{
-                System.out.println("Digite apenas números!");
+            } else {
+                System.out.println("[ERRO] Digite apenas números válidos (ex: 10.5).");
                 scanner.next();
             }
         }
         return valor;
     }
-
-    public static boolean validarIdC(int id, List<Clientes> clientes) {
-        for (Clientes c : clientes) {
-            if (c.getId() == id) {
-                System.out.println("Id já existe. Tente novamente.");
-                return false;
-            }
-        }
-        return true;
-    }
-
 }
 
 

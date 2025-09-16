@@ -1,20 +1,20 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.ArrayList;// a "verdadeira" lista
+import java.util.List; //é generico
 
 public class Estoque {
     private int id;
-    private List<Produtos> produtos;
+    private List<Produtos> produtos; //uma lista de produtos que esta chamando os produtos
     private int quantidade;
 
-    public Estoque(int id, Produtos produto, int quantidade) { // Construtor
+    public Estoque(int id, Produtos produto, int quantidade) { // Construtor com parametros
         this.id = id;
-        this.produtos = new ArrayList<>();
+        this.produtos = new ArrayList<>(); //pq vc esta passando uma lista de produtos para os produtos
         this.quantidade = quantidade;
     }
 
-    // Getters e Setters
+    // getters e setters
     public int getId() {
         return id;
     }
@@ -36,9 +36,10 @@ public class Estoque {
 
     //metodos especificos para a classe estoque
 
-    @Override // Método toString para exibir informações do estoque
+    @Override // metodo tostring para passar tudo que será exibido em string
     public String toString() {
         return "Estoque [id=" + id + ", produto=" + produtos + ", quantidade=" + quantidade + "]";
     }
     
 }
+
